@@ -36,5 +36,20 @@ int main() {
     // 1 1 1 1 1
     // 0 0 1 0 0
 
+    int tabuleiro [8][8] = {0};
+
+    tabuleiro [4][8] = 1;
+    for (int i = 2; i <= 5; i++) {
+    tabuleiro[i][3] = 1;
+}
+
+    for (int linha = 0; linha < 8; linha++) {
+        for (int coluna = 0; coluna < 8; coluna++) {
+            if (tabuleiro[linha][coluna] == 1) {
+                printf("Linha %d, Coluna %d\n", linha, coluna);
+            }
+        }
+    }
+
     return 0;
 }
